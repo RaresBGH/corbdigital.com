@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Rareș Bogheanu — Senior QA Lead building & auditing AI agent systems</title>
+<meta name="description" content="Senior QA Lead, 20 years. Now building and auditing production AI agent systems, local-first by default. Available for fractional QA leadership and local-first AI prototypes for healthcare and regulated domains.">
+<meta name="author" content="Rareș Bogheanu">
+<link rel="canonical" href="https://corbdigital.com/">
+
+<!-- Open Graph (LinkedIn, Slack, WhatsApp link previews) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://corbdigital.com/">
+<meta property="og:title" content="Rareș Bogheanu — Senior QA Lead building & auditing AI agent systems">
+<meta property="og:description" content="20 years of senior QA leadership, applied to the parts of an LLM system that fail quietly. Local-first by default. Available for consulting.">
+<meta property="og:image" content="https://corbdigital.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rareș Bogheanu — Senior QA Lead building & auditing AI agent systems">
+<meta name="twitter:description" content="20 years of senior QA leadership, applied to the parts of an LLM system that fail quietly. Local-first by default.">
+<meta name="twitter:image" content="https://corbdigital.com/og-image.png">
+
+<!-- Favicon (placeholder; replace with proper raven mark after deploy) -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-tint": "#ccbeff",
+          "primary": "#ccbeff",
+          "background": "#0a0a0f",
+          "surface-variant": "#35343a",
+          "on-surface": "#e4e1e9",
+          "surface-container-high": "#2a292f",
+          "on-background": "#e4e1e9",
+          "outline": "#938e9f",
+          "inverse-surface": "#e4e1e9",
+          "surface": "#12121a",
+          "primary-container": "#7b5fe0",
+          "secondary-container": "#015d72",
+          "surface-bright": "#39383e",
+          "surface-dim": "#12121a",
+          "on-primary": "#340097",
+          "surface-container": "#1f1f25",
+          "surface-container-lowest": "#0a0a0f",
+          "inverse-primary": "#6446c7",
+          "on-primary-container": "#fffdff",
+          "tertiary": "#d4933a",
+          "secondary": "#4a8fa6",
+          "surface-container-low": "#12121a",
+          "on-surface-variant": "#cac4d6",
+          "inverse-on-surface": "#303036",
+          "outline-variant": "#1f1f2b"
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        spacing: {
+          "xl": "64px",
+          "md": "24px",
+          "margin-mobile": "16px",
+          "gutter": "24px",
+          "base": "4px",
+          "lg": "40px",
+          "margin-desktop": "48px",
+          "sm": "16px",
+          "xs": "8px",
+          "section": "128px"
+        },
+        fontFamily: {
+          "display-xl-mobile": ["Inter"],
+          "body-sm": ["Inter"],
+          "label-caps": ["JetBrains Mono"],
+          "body-lg": ["Inter"],
+          "headline-md": ["Inter"],
+          "code-md": ["JetBrains Mono"],
+          "display-xl": ["Inter"]
+        },
+        fontSize: {
+          "display-xl-mobile": ["40px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }],
+          "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+          "label-caps": ["12px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "500" }],
+          "body-lg": ["17px", { lineHeight: "1.6", fontWeight: "400" }],
+          "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+          "code-md": ["15px", { lineHeight: "1.6", fontWeight: "400" }],
+          "display-xl": ["56px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }]
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  body {
+    background-color: #0a0a0f;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #e8e6f0 0%, #b8b0d8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section-spacing {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+  @media (max-width: 768px) {
+    .section-spacing {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+  @keyframes shimmer-hairline {
+    0% { background-position: 0 0; }
+    100% { background-position: 100vw 0; }
+  }
+  .iridescent-hairline {
+    height: 1px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: linear-gradient(90deg, transparent 0%, #1f1f2b 30%, #7b5fe0 50%, #1f1f2b 70%, transparent 100%);
+    background-size: 100vw 100%;
+    background-repeat: repeat-x;
+    animation: shimmer-hairline 5s linear infinite;
+  }
+  .section-divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #7b5fe0 50%, transparent 100%);
+    margin: 48px auto;
+  }
+  @media (min-width: 768px) {
+    .section-divider {
+      margin: 64px auto;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .iridescent-hairline {
+      animation: none;
+    }
+  }
+</style>
+</head>
+
+<body class="text-on-surface font-body-lg antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<nav class="relative w-full max-w-[1200px] mx-auto flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md">
+  <a href="/" class="font-headline-md text-headline-md text-on-surface flex items-center no-underline">
+    <svg class="w-5 h-5 md:w-6 md:h-6 mr-[12px] text-[#7b5fe0]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Stylized corvid silhouette, profile facing right.
+           Single solid fill, no detail, reads at 16x16. -->
+      <path d="M22.5 9.2 L 17.8 9.6 L 15.5 8.4 L 14 6.8 L 12.5 7.6 L 11.2 8.2 L 8.5 8.6 L 5.4 10.1 L 3.2 12.4 L 2.5 15.2 L 4.1 17.3 L 7.2 18.2 L 10.6 17.7 L 11.4 19.4 L 13.2 17.6 L 16.1 18.1 L 18.3 16.4 L 18.8 13.6 L 17.4 11.8 L 19.6 10.6 Z"/>
+    </svg>
+    Rareș Bogheanu
+  </a>
+  <ul class="flex gap-md font-label-caps text-label-caps">
+    <li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="mailto:rares.bogheanu@pm.me">Email</a></li>
+    <li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="https://www.linkedin.com/in/corbd" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="https://github.com/RaresBGH" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+  </ul>
+</nav>
+<div class="iridescent-hairline"></div>
+
+<main class="w-full max-w-[720px] mx-auto px-margin-mobile md:px-0">
+
+  <header class="section-spacing mt-xl">
+    <h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl gradient-text mb-lg">
+      Senior QA Lead, 20 years. Now building and auditing production AI agent systems, local-first by default.
+    </h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-prose">
+      Your AI features stop being a demo and start being a product. The parts of an LLM system that fail quietly — eval coverage, hidden failure modes, the gap between what the model emits and what your application routes on — are exactly the parts 20 years of senior QA leadership prepares you to find. Recently I shipped an on-device medical AI in Romanian for elderly rural patients, co-developed with practicing physicians. Same discipline, tighter constraints.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-md items-start sm:items-center">
+      <a class="bg-surface text-on-surface border border-outline-variant hover:bg-surface-container-high font-label-caps text-label-caps px-md py-sm transition-colors duration-200 uppercase tracking-widest" href="#offers">See the offers ↓</a>
+      <a class="text-primary-container hover:text-primary font-label-caps text-label-caps transition-colors duration-200" href="mailto:rares.bogheanu@pm.me">rares.bogheanu@pm.me</a>
+    </div>
+  </header>
+
+  <div class="section-divider"></div>
+
+  <section class="section-spacing" id="offers">
+    <h2 class="font-headline-md text-headline-md mb-xl text-on-surface">Working with me</h2>
+    <div class="flex flex-col gap-lg">
+
+      <article class="bg-surface border border-outline-variant p-xl flex flex-col gap-md transition-colors duration-200 hover:bg-surface-container-high">
+        <h3 class="font-body-lg text-body-lg font-bold">Fractional QA leadership for AI-native teams</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          For AI-native startups, shipping LLM features and quietly aware that their testing discipline is weaker than the rest of their engineering. I run QA strategy: eval coverage, regression suites, defect lifecycle, release gates. I embed enough to be useful, not enough to slow you down. 20+ hours per week, remote, EU/US-friendly.
+        </p>
+        <div class="font-code-md text-code-md text-tertiary mt-sm">From €66/hr · 20+ hours per week · remote</div>
+        <a class="mt-sm font-label-caps text-label-caps text-primary-container hover:text-primary uppercase tracking-widest inline-flex items-center gap-xs" href="mailto:rares.bogheanu@pm.me?subject=Fractional%20QA%20leadership%20inquiry">Get in touch →</a>
+      </article>
+
+      <article class="bg-surface border border-outline-variant p-xl flex flex-col gap-md transition-colors duration-200 hover:bg-surface-container-high">
+        <h3 class="font-body-lg text-body-lg font-bold">Local-first AI prototypes for healthcare and regulated domains</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          For health-tech, EU privacy-first companies, and clinics with regulatory pressure. I prototype on-device or self-hosted AI systems where data residency is a hard requirement, not a feature. TeleMed Hearth is the proof: <span class="font-code-md text-code-md text-on-surface">Gemma 4 E4B</span> on the patient's phone, FHIR records on the clinic's server, no cloud LLM API in the loop.
+        </p>
+        <div class="font-code-md text-code-md text-tertiary mt-sm">From €4,500 for a two-week local-first AI prototype sprint · €90/hr for ongoing work</div>
+        <a class="mt-sm font-label-caps text-label-caps text-primary-container hover:text-primary uppercase tracking-widest inline-flex items-center gap-xs" href="mailto:rares.bogheanu@pm.me?subject=Local-first%20AI%20prototype%20inquiry">Get in touch →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="section-spacing" id="work">
+    <h2 class="font-headline-md text-headline-md mb-xl text-on-surface">Recent work</h2>
+    <div class="flex flex-col gap-xl">
+
+      <div class="border-t border-outline-variant pt-lg">
+        <h3 class="font-body-lg text-body-lg font-bold mb-md text-on-surface">TeleMed Hearth</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+          A 72-year-old in rural Dâmbovița County describes her symptoms by voice in Romanian and arrives at her family doctor's video call with a structured triage already in his hands. The AI runs entirely on her phone: <span class="font-code-md text-code-md text-on-surface">Gemma 4 E4B</span> via <span class="font-code-md text-code-md text-on-surface">LiteRT-LM 0.11.0</span>, ~3.5 GB on-device, no cloud inference, no third-party LLM API. The doctor reviews the triage report alongside a WebRTC video call from his browser. Clinical records dual-write to encrypted local SQLite and to the clinic's self-hosted Medplum FHIR server over a WireGuard tunnel. Built in six weeks under agent-orchestrated development: a fleet of specialized AI agents handled implementation while I architected, audited, and shipped. Co-developed with practicing physicians at Clinica Medicală Dr. Bogheanu, Brănești. Submitted to the Kaggle Gemma 4 Good Hackathon, May 2026.
+        </p>
+        <div class="font-label-caps text-label-caps text-on-surface flex gap-sm flex-wrap">
+          <a class="hover:text-primary-container transition-colors" href="https://github.com/RaresBGH/TeleMed_Hearth" target="_blank" rel="noopener noreferrer">Repository</a>
+          <span class="text-on-surface-variant">·</span>
+          <a class="hover:text-primary-container transition-colors" href="https://youtu.be/O2J9_iT44N4" target="_blank" rel="noopener noreferrer">Demo video</a>
+          <span class="text-on-surface-variant">·</span>
+          <a class="hover:text-primary-container transition-colors" href="https://huggingface.co/CoRBs/telemed-k-gemma4-e4b-ro-medical" target="_blank" rel="noopener noreferrer">LoRA adapter on Hugging Face</a>
+        </div>
+      </div>
+
+      <div class="border-t border-outline-variant pt-lg">
+        <h3 class="font-body-lg text-body-lg font-bold mb-md text-on-surface">Local-first AI Factory</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+          The reason I can ship local-first AI prototypes fast is the development environment I built to do it. An ASUS Ascent GX10 in my home office — NVIDIA GB10 Grace Blackwell, ARM64, 128 GB unified memory — runs a ten-layer agentic stack end to end: inference (<span class="font-code-md text-code-md text-on-surface">llama-swap</span> orchestrating <span class="font-code-md text-code-md text-on-surface">Nemotron</span> and <span class="font-code-md text-code-md text-on-surface">Qwen3-Next vLLM</span> containers), agents (<span class="font-code-md text-code-md text-on-surface">Paperclip</span> plus <span class="font-code-md text-code-md text-on-surface">Hermes</span>, running CEO and CTO personas), automation (<span class="font-code-md text-code-md text-on-surface">n8n</span>, <span class="font-code-md text-code-md text-on-surface">Crawl4AI</span>), and data (<span class="font-code-md text-code-md text-on-surface">Qdrant</span> with 10,029 pages of stack documentation, Postgres, Redis). Eighteen containers, two compose files, zero data leaving the machine. I use it daily to build, audit, and iterate on the systems I sell to clients — with the same air-gapped discipline I'm offering them. The factory isn't a research toy — it's how I ship client work fast without sacrificing audit discipline.
+        </p>
+        <div class="font-label-caps text-label-caps text-on-surface-variant">
+          War stories on ARM64 toolchain, agent orchestration, and the GB10 in production — forthcoming on Medium
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="section-spacing" id="about">
+    <h2 class="font-headline-md text-headline-md mb-xl text-on-surface">About</h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      I build AI systems that work the way they claim to, and I audit the ones that don't. Local-first by default, ARM64-native, healthcare-grade where it matters. That direction sits on 20 years as a Senior QA Lead. Ubisoft (managing 32-person multiplayer test units on AAA titles, then acting department manager for 50+ during crunch). IBM (enterprise SAN storage on AIX, Linux, Solaris, HP-UX). O2 / Telefónica UK (billing migrations under regulatory deadline). ONRC (executive technical liaison for a national CRM across four national databases). 4D Pipeline (sole QA lead for Intel, Apple Vision Pro spatial computing, Unreal Engine digital twins).
+    </p>
+  </section>
+
+</main>
+
+<footer class="border-t border-outline-variant w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-lg gap-sm mt-xl">
+  <div class="font-label-caps text-label-caps text-on-surface-variant">© 2026 Rareș Bogheanu · AI Consultant · Pucioasa, Romania</div>
+  <ul class="flex gap-sm font-body-sm text-body-sm text-on-surface-variant">
+    <li><a class="hover:text-on-surface transition-colors duration-200" href="mailto:rares.bogheanu@pm.me">Email</a></li>
+    <li><a class="hover:text-on-surface transition-colors duration-200" href="https://www.linkedin.com/in/corbd" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a class="hover:text-on-surface transition-colors duration-200" href="https://github.com/RaresBGH" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
