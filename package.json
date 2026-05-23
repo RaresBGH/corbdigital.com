@@ -1,0 +1,14 @@
+{
+  "name": "corbdigital.com",
+  "version": "1.0.0",
+  "description": "Personal site for Rareș Bogheanu — corbdigital.com",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./tailwind.css -o ./style.css --minify",
+    "dev": "tailwindcss -i ./tailwind.css -o ./style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
